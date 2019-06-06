@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Medicamentos</title>
+</head>
+<body>
+  <div class="container">
+    <div class="item navbar">
+      <div id="inputBox">
+        <select id="optionsSearchMedicines"></select>
+        <select id="optionsFilters"></select>
+        <input type="search" placeholder="Search">
+        <button id="search">Search</button>
+      </div>
+      <div id="checkMedicines"></div>
+    </div>
+    <div class="item content">
+      <div class="body">
+        <div id="pages"></div>
+        <div id="result"></div>
+      </div>
+    </div>
+    <drug-modal show="false"></drug-modal>
+    <drug-loading show="false"></drug-loading>
+  </div>
+  <script src="./index.js" type="module"></script>
+</body>
+</html>
